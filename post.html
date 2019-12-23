@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>post</title>
+	<link rel="stylesheet" type="text/css" href="post.css">
+</head>
+<body>
+	<div class="avatar" id="avatar">
+  <div id="preview"><img src="https://source.unsplash.com/h13Y8vyIXNU/150x150" id="avatar-image" class="avatar_img" id="">
+  </div>
+  <div class="avatar_upload">
+    <label class="upload_label">Upload
+            <input type="file" id="upload">
+          </label>
+  </div>
+</div>
+<div class="nickname">
+  <span id="name" tabindex="4" data-key="1" contenteditable="true" onkeyup="changeAvatarName(event, this.dataset.key, this.textContent)" onblur="changeAvatarName('blur', this.dataset.key, this.textContent)"></span>
+</div>
+<script type="text/javascript" src="post.js"></script>
+</body>
+</html>
